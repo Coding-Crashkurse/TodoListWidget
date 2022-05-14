@@ -1,7 +1,7 @@
 from datetime import datetime as dt
 
 
-class PyItem(PyItemTemplate):
+class PyRow(PyItemTemplate):
     def on_click(self, event):
         console.log(event.target)
 
@@ -51,8 +51,8 @@ class PyItem(PyItemTemplate):
 
 
 
-class PyList(PyListTemplate):
-    item_class = PyItem
+class PyTable(PyListTemplate):
+    item_class = PyRow
     theme = None
 
     def connect(self):
